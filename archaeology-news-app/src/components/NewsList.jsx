@@ -8,7 +8,7 @@ function News() {
     // Function to fetch news data from an API
     async function fetchNews() {
         try {
-            const response = await fetch('https://newsapi.org/v2/everything?q=african%20archaeology&apiKey=YourAPI');
+            const response = await fetch('https://newsapi.org/v2/everything?q=african%20archaeology&apiKey=Your_API');
             const data = await response.json();
             return data.articles;
         } catch (error) {
